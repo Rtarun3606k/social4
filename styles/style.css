@@ -1,0 +1,17 @@
+/* nav bar styling */
+
+nav {
+    background-color: var(--background-color-nav);
+    transition: var(--transition-delay);
+}
+
+
+
+
+.toogle-btn {
+    margin-top: 10px;
+    margin-right: 57px;
+    font-size: 24px;
+    font-family: cursive;
+    margin-bottom: 12px;
+}

@@ -1,0 +1,49 @@
+@media (max-width:1000px) {
+
+    .moon {
+        bottom: 0.2%;
+        pointer-events: none;
+        opacity: 0;
+        opacity: 0;
+        left: -116px;
+        transform: rotate(58deg);
+    }
+
+    .sun {
+        position: absolute;
+        pointer-events: none;
+        left: 74px;
+
+    }
+
+
+    .toogle-btn {
+        margin-top: -6px;
+        margin-bottom: 0px;
+        margin-right: 40px;
+        font-size: 24px;
+        font-family: cursive;
+
+        left: 154px;
+    }
+
+    .h1-hed {
+        font-size: 19px;
+
+    }
+
+    .h6-lorem {
+        font-size: 10px;
+    }
+
+    .them-toogle-btn {
+        width: 51px;
+        font-size: 13px;
+    }
+
+    .boxes {
+        width: 82%;
+        height: 56%;
+    }
+
+}

@@ -1,0 +1,116 @@
+body{
+    --background-color: #bfcaca;
+    --background-color-nav: #bfcaca;
+    --button-text-color:white;
+    --transition-delay:1s;
+    --text-color:black;
+    --acent-color:black;
+    --background-boxes:#eaf4f4;
+    --green:#950e92;
+    cursor: pointer;
+    
+    
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: var(--transition-delay);
+    overflow-wrap: hidden;
+    
+}
+
+body.dark{
+    --background-boxes:#41416b;
+    --green:#03ff03;
+    --background-color:#22213cf0;
+    --button-text-color:rgb(19, 17, 17);
+    --background-color-nav:#2f2e47;
+    /* --button-text-color:blue; */
+    --acent-color:rgb(249, 249, 0);
+    --text-color:white;
+    --transition-delay:1s;
+}
+
+.sun-moon-container img{
+    width: 37px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.them-toogle-btn{
+    background-color: var(--acent-color);
+    color: var(--button-text-color);
+
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition-delay);
+    transform: scale(1);
+    /* margin-top: 40%; */
+    margin-top: 1%;
+}
+
+
+
+.them-toogle-btn:hover,
+.them-toogle-btn:focus{
+    transform:scale(1.1)  ;
+    transition: var(--transition-delay);
+}
+
+.sun-moon-container{
+    --rotation:0;
+    position: absolute;
+    pointer-events: none;
+    height: 200vmin;
+    transform: rotate(calc(var(--rotation) * 1deg));
+    /* transform: tr(calc(var(--rotation) * 1px)); */
+    transition: transform var(--transition-delay);
+}
+.dark .sun-moon-container
+{
+    --rotation: 179;
+}
+
+.sun,
+.moon{
+    position: absolute;
+    pointer-events: none;
+    transition:opacity var(--transition-delay);
+    width: 30px;
+    height: 30px;
+    left: 31%;
+    
+}
+
+
+.sun{
+    position: absolute;
+    pointer-events: none;
+    top: 0.2%;
+    left: 70px;
+    opacity: 1;
+}
+
+.dark .sun{
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.moon{
+    /* bottom: 1.6%; */
+    bottom: 0.2%;
+    pointer-events: none;
+    opacity: 0;
+    
+    transform: rotate(180deg);
+}
+
+.dark .moon{
+    opacity: 1;
+    pointer-events: none;
+}
